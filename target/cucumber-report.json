@@ -1,0 +1,615 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4546667148,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Gym_By_Region_Class.set_window()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "Browse by region",
+        "description": "",
+        "id": "searching-for-a-gym;browse-by-region",
+        "after": [
+          {
+            "result": {
+              "duration": 27750,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Gym_By_Region_Class.close_browser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7076196956,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I launch the \"url\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "url",
+                  "offset": 14
+                }
+              ],
+              "location": "Gym_By_Region_Class.i_launch_the(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 166219879,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I click on \"GYMS_tab\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "GYMS_tab",
+                  "offset": 12
+                }
+              ],
+              "location": "Gym_By_Region_Class.i_click_on(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 301975192,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I click on \"Find a Gym\" link",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Find a Gym",
+                  "offset": 12
+                }
+              ],
+              "location": "Gym_By_Region_Class.i_click_on_link(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 14503677066,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I should see \"different regions\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "different regions",
+                  "offset": 14
+                }
+              ],
+              "location": "Gym_By_Region_Class.i_should_see(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 6,
+            "name": "@testcompleted"
+          }
+        ]
+      }
+    ],
+    "name": "Searching for a gym",
+    "description": "As a prospective Nuffield gym customer\r\nI want to find a gym nearest to my house\r\nin order to decide which gym to join",
+    "id": "searching-for-a-gym",
+    "keyword": "Feature",
+    "uri": "Gym_By_Region.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 5,
+        "name": "Browse by region",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3484899815,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I launch the \"url\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "url",
+                  "offset": 14
+                }
+              ],
+              "location": "Gym_By_Region_Class.i_launch_the(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 708028874,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I click on \"GYMS_tab\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "GYMS_tab",
+                  "offset": 12
+                }
+              ],
+              "location": "Gym_By_Region_Class.i_click_on(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 327486572,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I click on \"Find a Gym\" link",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Find a Gym",
+                  "offset": 12
+                }
+              ],
+              "location": "Gym_By_Region_Class.i_click_on_link(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2159634764,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "in the \"searchbox\" textfield I enter \"GymNearMe_Text\" in the address text field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "searchbox",
+                  "offset": 8
+                },
+                {
+                  "val": "GymNearMe_Text",
+                  "offset": 38
+                }
+              ],
+              "location": "Gym_Near_Me_Class.in_the_textfield_I_enter_in_the_address_text_field(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2095558478,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I press \"enter\" on the keyboard",
+            "match": {
+              "arguments": [
+                {
+                  "val": "enter",
+                  "offset": 9
+                }
+              ],
+              "location": "Gym_Near_Me_Class.i_press_on_the_keyboard(String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 39191752,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Gym_By_Region_Class.set_window()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "Search for a gym near me",
+        "description": "",
+        "id": "as-a-prospective-nuffield-gym-customer;search-for-a-gym-near-me",
+        "after": [
+          {
+            "result": {
+              "duration": 11024,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Gym_By_Region_Class.close_browser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2057254726,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I should see \"a list of gym near me\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "a list of gym near me",
+                  "offset": 14
+                }
+              ],
+              "location": "Gym_By_Region_Class.i_should_see(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 12,
+            "name": "@testcompleted"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "Browse by region",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3258213812,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I launch the \"url\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "url",
+                  "offset": 14
+                }
+              ],
+              "location": "Gym_By_Region_Class.i_launch_the(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 144642918,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I click on \"GYMS_tab\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "GYMS_tab",
+                  "offset": 12
+                }
+              ],
+              "location": "Gym_By_Region_Class.i_click_on(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 436410670,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I click on \"Find a Gym\" link",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Find a Gym",
+                  "offset": 12
+                }
+              ],
+              "location": "Gym_By_Region_Class.i_click_on_link(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2145881405,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "in the \"searchbox\" textfield I enter \"GymNearMe_Text\" in the address text field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "searchbox",
+                  "offset": 8
+                },
+                {
+                  "val": "GymNearMe_Text",
+                  "offset": 38
+                }
+              ],
+              "location": "Gym_Near_Me_Class.in_the_textfield_I_enter_in_the_address_text_field(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2049975861,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I press \"enter\" on the keyboard",
+            "match": {
+              "arguments": [
+                {
+                  "val": "enter",
+                  "offset": 9
+                }
+              ],
+              "location": "Gym_Near_Me_Class.i_press_on_the_keyboard(String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 26390636,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Gym_By_Region_Class.set_window()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "Save user\u0027s location for future visits",
+        "description": "",
+        "id": "as-a-prospective-nuffield-gym-customer;save-user\u0027s-location-for-future-visits",
+        "after": [
+          {
+            "result": {
+              "duration": 25469,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Gym_By_Region_Class.close_browser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2022870187,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I am a \"repeat\" visitor",
+            "match": {
+              "arguments": [
+                {
+                  "val": "repeat",
+                  "offset": 8
+                }
+              ],
+              "location": "Gym_Near_Me_Class.i_am_a_visitor(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2133382497,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I view the list of \"Nuffield gyms\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Nuffield gyms",
+                  "offset": 20
+                }
+              ],
+              "location": "Gym_Near_Me_Class.i_view_the_list_of(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2044412555,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I should see \"a list of gym near me\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "a list of gym near me",
+                  "offset": 14
+                }
+              ],
+              "location": "Gym_By_Region_Class.i_should_see(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 16,
+            "name": "@testcompleted"
+          }
+        ]
+      }
+    ],
+    "name": "As a prospective Nuffield gym customer",
+    "description": "I want to find a gym nearest to my house\r\nin order to decide which gym to join",
+    "id": "as-a-prospective-nuffield-gym-customer",
+    "keyword": "Feature",
+    "uri": "Gym_Near_Me.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 5,
+        "name": "Search for a gym near me",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3724457259,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I launch the \"url\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "url",
+                  "offset": 14
+                }
+              ],
+              "location": "Gym_By_Region_Class.i_launch_the(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 154960978,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I click on \"GYMS_tab\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "GYMS_tab",
+                  "offset": 12
+                }
+              ],
+              "location": "Gym_By_Region_Class.i_click_on(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 439812896,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I click on \"Find a Gym\" link",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Find a Gym",
+                  "offset": 12
+                }
+              ],
+              "location": "Gym_By_Region_Class.i_click_on_link(String)"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 29842661,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Gym_By_Region_Class.set_window()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "Save user location for future visits",
+        "description": "",
+        "id": "as-a-repeat-visitor,-i-want-tobe-able;save-user-location-for-future-visits",
+        "after": [
+          {
+            "result": {
+              "duration": 25849,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Gym_By_Region_Class.close_browser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2054185499,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I should see \"a list of gym near me\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "a list of gym near me",
+                  "offset": 14
+                }
+              ],
+              "location": "Gym_By_Region_Class.i_should_see(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 10,
+            "name": "@testcompleted"
+          }
+        ]
+      }
+    ],
+    "name": "As a repeat visitor, I want tobe able",
+    "description": "to see a list of gym near me based on previous\r\naddress",
+    "id": "as-a-repeat-visitor,-i-want-tobe-able",
+    "keyword": "Feature",
+    "uri": "Save_User_Location.feature"
+  }
+]
